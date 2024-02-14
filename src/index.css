@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", sans-serif;
+  }
+
+  .button-press {
+    @apply active:translate-y-[0.075rem];
+  }
+}
+
+/* custom styles */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0.5em; /* Adjust this value to control scrollbar width */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Adjust this value to set the scrollbar thumb color */
+}
